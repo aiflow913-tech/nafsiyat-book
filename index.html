@@ -6,7 +6,7 @@
 
     <title>نفسيات NAFSYAT | تواصل معنا</title>
 
-    <meta name="description" content="نفسيات NAFSYAT - تواصل معنا مباشرة عبر واتساب للطلب والاستفسار.">
+    <meta name="description" content="نفسيات NAFSYAT - للطلب والاستفسار تواصل معنا مباشرة عبر واتساب.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,6 @@
         }
 
         :root {
-            --black: #080808;
             --gold: #D4B78F;
             --light-gold: #E8DCC8;
             --whatsapp: #25D366;
@@ -29,6 +28,7 @@
         body {
             min-height: 100vh;
             font-family: 'Tajawal', sans-serif;
+
             background:
                 radial-gradient(
                     circle at 50% 15%,
@@ -53,6 +53,7 @@
 
         body::before {
             content: "";
+
             position: fixed;
 
             width: 280px;
@@ -118,7 +119,7 @@
             );
         }
 
-        /* الشعار */
+        /* شعار NAFSYAT */
         .logo {
             width: 105px;
             height: 105px;
@@ -155,8 +156,6 @@
             font-size: 29px;
             font-weight: 800;
 
-            letter-spacing: 0.2px;
-
             margin-bottom: 9px;
         }
 
@@ -164,7 +163,6 @@
             color: var(--light-gold);
 
             font-size: 14px;
-
             line-height: 1.8;
 
             opacity: 0.85;
@@ -176,7 +174,6 @@
             width: 100%;
 
             display: flex;
-
             align-items: center;
             justify-content: center;
 
@@ -185,7 +182,6 @@
             padding: 17px 18px;
 
             background: var(--whatsapp);
-
             color: white;
 
             border-radius: 16px;
@@ -198,10 +194,7 @@
             box-shadow:
                 0 10px 25px rgba(37, 211, 102, 0.18);
 
-            transition:
-                transform 0.2s ease,
-                box-shadow 0.2s ease,
-                filter 0.2s ease;
+            transition: 0.2s ease;
         }
 
         .wa-btn:hover {
@@ -219,7 +212,6 @@
 
         .wa-icon {
             font-size: 21px;
-            line-height: 1;
         }
 
         .phone {
@@ -271,7 +263,6 @@
         }
 
         @media (max-width: 380px) {
-
             body {
                 padding: 14px;
             }
@@ -294,16 +285,6 @@
                 font-size: 13px;
             }
         }
-
-        @media (prefers-reduced-motion: reduce) {
-
-            *,
-            *::before,
-            *::after {
-                animation: none !important;
-                transition: none !important;
-            }
-        }
     </style>
 </head>
 
@@ -311,10 +292,10 @@
 
     <main class="card">
 
-        <!-- شعار نفسيات -->
+        <!-- صورة الشعار الموجودة في GitHub -->
         <div class="logo" aria-label="شعار نفسيات">
             <img
-                src="logo.jpg"
+                src="IMG-20261008-WA3904.jpg"
                 alt="شعار نفسيات NAFSYAT"
             >
         </div>
@@ -330,7 +311,6 @@
             href="https://wa.me/212671497919?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%20%D9%83%D8%AA%D8%A7%D8%A8%20%D9%83%D9%8A%D9%81%20%D8%AA%D9%83%D8%B4%D9%81%20%D8%A7%D9%84%D9%85%D8%AA%D9%84%D8%A7%D8%B9%D8%A8%20%D9%81%D9%8A%205%20%D8%AF%D9%82%D8%A7%D8%A6%D9%82"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="الطلب عبر واتساب"
         >
             <span class="wa-icon">💬</span>
             <span>اطلب الآن عبر الواتساب</span>
@@ -348,3 +328,4 @@
 
 </body>
 </html>
+
