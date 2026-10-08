@@ -1,258 +1,354 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>For My Love 💗</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      font-family: 'Press Start 2P', cursive;
-      user-select: none;
-    }
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #ffdeeb;
-      background-image: radial-gradient(#ffb6c1 2px, transparent 2px);
-      background-size: 20px 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      color: #d63384;
-      text-align: center;
-    }
-    .card {
-      background: #fff0f5;
-      border: 6px solid #ff69b4;
-      box-shadow: 8px 8px 0px #d63384;
-      padding: 25px;
-      border-radius: 15px;
-      max-width: 450px;
-      width: 90%;
-      position: relative;
-    }
-    img {
-      width: 150px;
-      height: 150px;
-      border: 4px solid #ff69b4;
-      border-radius: 10px;
-      margin-bottom: 15px;
-      object-fit: cover;
-    }
-    h2 {
-      font-size: 13px;
-      line-height: 1.6;
-      margin-bottom: 20px;
-      color: #c71585;
-    }
-    .btn-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 15px;
-      flex-wrap: wrap;
-      margin-top: 15px;
-    }
-    button {
-      background-color: #ff69b4;
-      color: white;
-      border: 4px solid #c71585;
-      box-shadow: 4px 4px 0px #8b008b;
-      padding: 12px 18px;
-      font-size: 10px;
-      cursor: pointer;
-      border-radius: 8px;
-      transition: transform 0.1s;
-    }
-    button:active {
-      transform: translate(2px, 2px);
-      box-shadow: 2px 2px 0px #8b008b;
-    }
-    .btn-no {
-      background-color: #ffb6c1;
-      border-color: #db7093;
-      box-shadow: 4px 4px 0px #c71585;
-      color: #8b008b;
-    }
-    .sub-text {
-      font-size: 9px;
-      color: #db7093;
-      margin-top: 10px;
-      height: 15px;
-    }
-    .option-btn {
-      display: block;
-      width: 100%;
-      margin: 10px 0;
-    }
-    .hidden {
-      display: none !important;
-    }
-    
-    /* Modal Popup */
-    .modal {
-      position: fixed;
-      top: 0; 
-      left: 0; 
-      width: 100vw; 
-      height: 100vh;
-      background: rgba(0,0,0,0.6);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
-    .modal-content {
-      background: white;
-      padding: 20px;
-      border: 4px solid #ff69b4;
-      border-radius: 10px;
-      font-size: 10px;
-      line-height: 1.6;
-      max-width: 80%;
-      box-shadow: 6px 6px 0px #d63384;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>نفسيات NAFSYAT | تواصل معنا</title>
+
+    <meta name="description" content="نفسيات NAFSYAT - تواصل معنا مباشرة عبر واتساب للاستفسار عن كتاب كيف تكشف المتلاعب في 5 دقائق.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --black: #080808;
+            --dark-red: #16050a;
+            --red: #4a0f1f;
+            --gold: #d4b78f;
+            --light-gold: #ead9bd;
+            --white: #ffffff;
+            --whatsapp: #25d366;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: 'Tajawal', sans-serif;
+            background:
+                radial-gradient(
+                    circle at 50% 15%,
+                    rgba(110, 20, 45, 0.35),
+                    transparent 35%
+                ),
+                linear-gradient(
+                    145deg,
+                    #050505 0%,
+                    #0a0a0a 45%,
+                    #16050a 100%
+                );
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 20px;
+            color: var(--white);
+
+            overflow-x: hidden;
+        }
+
+        /* إضاءة خلفية */
+        body::before {
+            content: "";
+            position: fixed;
+            width: 280px;
+            height: 280px;
+            background: rgba(128, 20, 50, 0.18);
+            filter: blur(90px);
+            border-radius: 50%;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            pointer-events: none;
+        }
+
+        .card {
+            position: relative;
+            width: 100%;
+            max-width: 420px;
+
+            padding: 42px 25px 30px;
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    rgba(35, 7, 14, 0.98),
+                    rgba(74, 15, 31, 0.96)
+                );
+
+            border-radius: 30px;
+
+            border: 1px solid rgba(212, 183, 143, 0.22);
+
+            box-shadow:
+                0 25px 70px rgba(0, 0, 0, 0.65),
+                inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+            animation: cardIn 0.8s ease-out;
+        }
+
+        /* خط ذهبي أعلى البطاقة */
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 15%;
+            right: 15%;
+            height: 1px;
+
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(212, 183, 143, 0.7),
+                transparent
+            );
+        }
+
+        .logo {
+            width: 105px;
+            height: 105px;
+
+            margin: 0 auto 18px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    #171717 0%,
+                    #090909 70%
+                );
+
+            border: 2px solid var(--gold);
+
+            color: var(--gold);
+
+            font-size: 42px;
+            font-weight: 800;
+
+            box-shadow:
+                0 0 0 7px rgba(212, 183, 143, 0.05),
+                0 12px 35px rgba(0, 0, 0, 0.45);
+
+            animation: logoIn 1s ease-out;
+        }
+
+        h1 {
+            color: var(--gold);
+
+            font-size: 29px;
+            font-weight: 800;
+
+            letter-spacing: 0.2px;
+
+            margin-bottom: 9px;
+        }
+
+        .sub {
+            color: var(--light-gold);
+
+            font-size: 14px;
+            line-height: 1.8;
+
+            opacity: 0.85;
+
+            margin-bottom: 28px;
+        }
+
+        .whatsapp-wrapper {
+            width: 100%;
+        }
+
+        .wa-btn {
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            padding: 17px 18px;
+
+            background: var(--whatsapp);
+            color: #ffffff;
+
+            border-radius: 16px;
+
+            text-decoration: none;
+
+            font-size: 16px;
+            font-weight: 800;
+
+            box-shadow:
+                0 10px 25px rgba(37, 211, 102, 0.18);
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease,
+                filter 0.2s ease;
+        }
+
+        .wa-btn:hover {
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 14px 30px rgba(37, 211, 102, 0.28);
+
+            filter: brightness(1.05);
+        }
+
+        .wa-btn:active {
+            transform: scale(0.98);
+        }
+
+        .wa-icon {
+            font-size: 21px;
+            line-height: 1;
+        }
+
+        .phone {
+            margin-top: 19px;
+
+            color: var(--gold);
+
+            font-size: 12px;
+
+            opacity: 0.55;
+
+            direction: ltr;
+        }
+
+        .footer {
+            margin-top: 25px;
+
+            padding-top: 17px;
+
+            border-top: 1px solid rgba(212, 183, 143, 0.1);
+
+            color: rgba(232, 220, 200, 0.5);
+
+            font-size: 11px;
+        }
+
+        /* تأثيرات الحركة */
+
+        @keyframes cardIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px) scale(0.98);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @keyframes logoIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* تحسين الهاتف */
+
+        @media (max-width: 380px) {
+            body {
+                padding: 14px;
+            }
+
+            .card {
+                padding: 35px 20px 25px;
+                border-radius: 25px;
+            }
+
+            .logo {
+                width: 92px;
+                height: 92px;
+                font-size: 37px;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            .sub {
+                font-size: 13px;
+            }
+        }
+
+        /* تقليل الحركة لمن يفضل ذلك */
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<!-- Audio Element -->
-<audio id="bgMusic" loop preload="auto">
-  <source src="blue (Lyrics) [4adZ7AguVcw]_2026_03_28_18_52_06.mp3" type="audio/mpeg">
-</audio>
+    <main class="card">
 
-<div class="card" onclick="playAudioOnce()">
-  
-  <!-- Screen 1 -->
-  <div id="screen1">
-    <img src="6194eeff3461aeb7c3b63db388d00d1e.gif" alt="Cat GIF">
-    <h2 id="title1">aya, wach 3arfa chhal kat3ajbini wkanbrik a bb💗?</h2>
-    <div class="btn-container">
-      <button id="btnYes" onclick="goToScreen(2)">IYEH 3ARFA</button>
-      <button id="btnNo" class="btn-no" onclick="handleNo()">LA MA3ARFACH</button>
-    </div>
-    <div id="noSubText" class="sub-text"></div>
-  </div>
+        <div class="logo" aria-label="شعار نفسيات">
+            ن
+        </div>
 
-  <!-- Screen 2 -->
-  <div id="screen2" class="hidden">
-    <img src="bc218896240bcc745fe80d0a299f268e.gif" alt="Cat GIF">
-    <h2>YAY! Wa khassak tkon 3arfa!</h2>
-    <button onclick="goToScreen(3)">KLIKEY HNA BASH TKEMLI</button>
-  </div>
+        <h1>نفسيات NAFSYAT</h1>
 
-  <!-- Screen 3 -->
-  <div id="screen3" class="hidden">
-    <img src="7c660895bc2e4cb572ee9adf3bf5642c.gif" alt="Cat GIF">
-    <h2>chno aktar haja kat3ajbak fiya ?</h2>
-    <button class="option-btn" onclick="selectOption1('soti')">soti</button>
-    <button class="option-btn" onclick="selectOption1('el hanan dyali Lik')">el hanan dyali Lik</button>
-    <button class="option-btn" onclick="selectOption1('Kolchi')">Kolchi</button>
-  </div>
+        <p class="sub">
+            اكتشف المزيد وتواصل معنا مباشرة عبر واتساب
+        </p>
 
-  <!-- Screen 4 -->
-  <div id="screen4" class="hidden">
-    <img src="ab2634cc0d8842984375172d0433e486.gif" alt="Cat GIF">
-    <h2>chhal kadni ana kanbriiiiiiiik💗</h2>
-    <button class="option-btn" onclick="checkQuiz('wrong')">100%</button>
-    <button class="option-btn" onclick="checkQuiz('wrong')">200%</button>
-    <button class="option-btn" onclick="checkQuiz('wrong')">1000%</button>
-    <button class="option-btn" onclick="checkQuiz('wrong')">∞</button>
-    <button class="option-btn" onclick="checkQuiz('correct')">∞×∞</button>
-  </div>
+        <div class="whatsapp-wrapper">
 
-  <!-- Screen 5 -->
-  <div id="screen5" class="hidden">
-    <img src="f47b456697419fec6ea919e38e6a1595.gif" alt="Cat GIF">
-    <h2>AKTAAR HJA KANBHIK!!!</h2>
-    <p id="summaryText" style="font-size: 9px; color: #c71585; margin: 15px 0;"></p>
-    <button onclick="openNote()">💌 1 NEW MESSAGE</button>
-  </div>
+            <a
+                class="wa-btn"
+                href="https://wa.me/212671497919?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%84%D9%89%20%D9%83%D8%AA%D8%A7%D8%A8%20%D9%83%D9%8A%D9%81%20%D8%AA%D9%83%D8%B4%D9%81%20%D8%A7%D9%84%D9%85%D8%AA%D9%84%D8%A7%D8%B9%D8%A8%20%D9%81%D9%8A%205%20%D8%AF%D9%82%D8%A7%D8%A6%D9%82"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="التواصل مع نفسيات عبر واتساب"
+            >
+                <span class="wa-icon">💬</span>
+                <span>تواصل عبر الواتساب الآن</span>
+            </a>
 
-  <!-- Modal Note -->
-  <div id="noteModal" class="modal hidden">
-    <div class="modal-content">
-      <p>Nti a7san 7aja wa93at liya f 7ayati.. Kat3jbini w kanbrik bzaaaaaaaaaaf a bb💗!</p>
-      <button onclick="closeNote()" style="margin-top: 15px;">Close x</button>
-    </div>
-  </div>
+        </div>
 
-</div>
+        <p class="phone">
+            +212 671 497 919
+        </p>
 
-<script>
-  let audioStarted = false;
-  function playAudioOnce() {
-    if (!audioStarted) {
-      const audio = document.getElementById('bgMusic');
-      audio.play().catch(e => console.log("Audio play blocked"));
-      audioStarted = true;
-    }
-  }
+        <div class="footer">
+            © 2026 NAFSYAT — جميع الحقوق محفوظة
+        </div>
 
-  let noCount = 0;
-  const noMessages = [
-    "Nari ma3arfach?!",
-    "Men niyatk?",
-    "Kanjm3 lik 9loba hna <3",
-    "Rah kanbrik bzaaaaf!",
-    "Ghadia tbkini...",
-    "9albi t3sar <3"
-  ];
-
-  let selectedOption1 = "";
-
-  function handleNo() {
-    playAudioOnce();
-    const btnYes = document.getElementById('btnYes');
-    const subText = document.getElementById('noSubText');
-    
-    let currentSize = parseFloat(window.getComputedStyle(btnYes).fontSize);
-    btnYes.style.fontSize = (currentSize + 4) + 'px';
-    btnYes.style.padding = (currentSize + 2) + 'px';
-
-    subText.innerText = noMessages[noCount % noMessages.length];
-    noCount++;
-  }
-
-  function goToScreen(screenNum) {
-    playAudioOnce();
-    for (let i = 1; i <= 5; i++) {
-      document.getElementById(`screen${i}`).classList.add('hidden');
-    }
-    document.getElementById(`screen${screenNum}`).classList.remove('hidden');
-  }
-
-  function selectOption1(val) {
-    playAudioOnce();
-    selectedOption1 = val;
-    goToScreen(4);
-  }
-
-  function checkQuiz(status) {
-    playAudioOnce();
-    if (status === 'wrong') {
-      alert("ralat ❌ kanbriiiiiiiik ktr mn haka😏");
-    } else {
-      alert("n9adro n9olo had el jamab sahih walakin kanbriiiiiiiik ktr mn haka 💗");
-      document.getElementById('summaryText').innerText = "Kat3jbak fiya: " + selectedOption1;
-      goToScreen(5);
-    }
-  }
-
-  function openNote() {
-    document.getElementById('noteModal').classList.remove('hidden');
-  }
-
-  function closeNote() {
-    document.getElementById('noteModal').classList.add('hidden');
-  }
-</script>
+    </main>
 
 </body>
 </html>
-
-    
-
