@@ -6,11 +6,10 @@
 
     <title>نفسيات NAFSYAT | تواصل معنا</title>
 
-    <meta name="description" content="نفسيات NAFSYAT - تواصل معنا مباشرة عبر واتساب للاستفسار عن كتاب كيف تكشف المتلاعب في 5 دقائق.">
+    <meta name="description" content="نفسيات NAFSYAT - تواصل معنا مباشرة عبر واتساب للطلب والاستفسار.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 
     <style>
@@ -22,12 +21,9 @@
 
         :root {
             --black: #080808;
-            --dark-red: #16050a;
-            --red: #4a0f1f;
-            --gold: #d4b78f;
-            --light-gold: #ead9bd;
-            --white: #ffffff;
-            --whatsapp: #25d366;
+            --gold: #D4B78F;
+            --light-gold: #E8DCC8;
+            --whatsapp: #25D366;
         }
 
         body {
@@ -42,8 +38,8 @@
                 linear-gradient(
                     145deg,
                     #050505 0%,
-                    #0a0a0a 45%,
-                    #16050a 100%
+                    #0A0A0A 45%,
+                    #16050A 100%
                 );
 
             display: flex;
@@ -51,28 +47,33 @@
             align-items: center;
 
             padding: 20px;
-            color: var(--white);
-
+            color: white;
             overflow-x: hidden;
         }
 
-        /* إضاءة خلفية */
         body::before {
             content: "";
             position: fixed;
+
             width: 280px;
             height: 280px;
+
             background: rgba(128, 20, 50, 0.18);
+
             filter: blur(90px);
             border-radius: 50%;
+
             top: 10%;
             left: 50%;
+
             transform: translateX(-50%);
+
             pointer-events: none;
         }
 
         .card {
             position: relative;
+
             width: 100%;
             max-width: 420px;
 
@@ -98,13 +99,15 @@
             animation: cardIn 0.8s ease-out;
         }
 
-        /* خط ذهبي أعلى البطاقة */
         .card::before {
             content: "";
+
             position: absolute;
+
             top: 0;
             left: 15%;
             right: 15%;
+
             height: 1px;
 
             background: linear-gradient(
@@ -115,37 +118,35 @@
             );
         }
 
+        /* الشعار */
         .logo {
             width: 105px;
             height: 105px;
 
             margin: 0 auto 18px;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
             border-radius: 50%;
-
-            background:
-                radial-gradient(
-                    circle,
-                    #171717 0%,
-                    #090909 70%
-                );
 
             border: 2px solid var(--gold);
 
-            color: var(--gold);
+            overflow: hidden;
 
-            font-size: 42px;
-            font-weight: 800;
+            background: #080808;
 
             box-shadow:
                 0 0 0 7px rgba(212, 183, 143, 0.05),
                 0 12px 35px rgba(0, 0, 0, 0.45);
 
             animation: logoIn 1s ease-out;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+
+            display: block;
+
+            object-fit: cover;
         }
 
         h1 {
@@ -163,6 +164,7 @@
             color: var(--light-gold);
 
             font-size: 14px;
+
             line-height: 1.8;
 
             opacity: 0.85;
@@ -170,22 +172,21 @@
             margin-bottom: 28px;
         }
 
-        .whatsapp-wrapper {
-            width: 100%;
-        }
-
         .wa-btn {
             width: 100%;
 
             display: flex;
+
             align-items: center;
             justify-content: center;
+
             gap: 10px;
 
             padding: 17px 18px;
 
             background: var(--whatsapp);
-            color: #ffffff;
+
+            color: white;
 
             border-radius: 16px;
 
@@ -245,8 +246,6 @@
             font-size: 11px;
         }
 
-        /* تأثيرات الحركة */
-
         @keyframes cardIn {
             from {
                 opacity: 0;
@@ -271,9 +270,8 @@
             }
         }
 
-        /* تحسين الهاتف */
-
         @media (max-width: 380px) {
+
             body {
                 padding: 14px;
             }
@@ -286,7 +284,6 @@
             .logo {
                 width: 92px;
                 height: 92px;
-                font-size: 37px;
             }
 
             h1 {
@@ -298,9 +295,8 @@
             }
         }
 
-        /* تقليل الحركة لمن يفضل ذلك */
-
         @media (prefers-reduced-motion: reduce) {
+
             *,
             *::before,
             *::after {
@@ -315,30 +311,30 @@
 
     <main class="card">
 
+        <!-- شعار نفسيات -->
         <div class="logo" aria-label="شعار نفسيات">
-            ن
+            <img
+                src="logo.jpg"
+                alt="شعار نفسيات NAFSYAT"
+            >
         </div>
 
         <h1>نفسيات NAFSYAT</h1>
 
         <p class="sub">
-            اكتشف المزيد وتواصل معنا مباشرة عبر واتساب
+            للطلب والاستفسار تواصل معنا مباشرة عبر واتساب
         </p>
 
-        <div class="whatsapp-wrapper">
-
-            <a
-                class="wa-btn"
-                href="https://wa.me/212671497919?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%84%D9%89%20%D9%83%D8%AA%D8%A7%D8%A8%20%D9%83%D9%8A%D9%81%20%D8%AA%D9%83%D8%B4%D9%81%20%D8%A7%D9%84%D9%85%D8%AA%D9%84%D8%A7%D8%B9%D8%A8%20%D9%81%D9%8A%205%20%D8%AF%D9%82%D8%A7%D8%A6%D9%82"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="التواصل مع نفسيات عبر واتساب"
-            >
-                <span class="wa-icon">💬</span>
-                <span>تواصل عبر الواتساب الآن</span>
-            </a>
-
-        </div>
+        <a
+            class="wa-btn"
+            href="https://wa.me/212671497919?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%20%D9%83%D8%AA%D8%A7%D8%A8%20%D9%83%D9%8A%D9%81%20%D8%AA%D9%83%D8%B4%D9%81%20%D8%A7%D9%84%D9%85%D8%AA%D9%84%D8%A7%D8%B9%D8%A8%20%D9%81%D9%8A%205%20%D8%AF%D9%82%D8%A7%D8%A6%D9%82"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="الطلب عبر واتساب"
+        >
+            <span class="wa-icon">💬</span>
+            <span>اطلب الآن عبر الواتساب</span>
+        </a>
 
         <p class="phone">
             +212 671 497 919
